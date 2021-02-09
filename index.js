@@ -16,10 +16,11 @@ window.addEventListener('load', () => {
 
   checkbox1.addEventListener('change', () => {
     if (checkbox1.checked) {
-      checkbox2.checked = false;
-      checkbox3.checked = false;
-      checkbox4.checked = false;
-      checkbox5.checked = false;
+      span2.textContent = '';
+      span3.textContent = '';
+      span4.textContent = '';
+      span5.textContent = '';
+
       span1.textContent =
         'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.';
     } else {
@@ -29,6 +30,11 @@ window.addEventListener('load', () => {
 
   checkbox2.addEventListener('change', () => {
     if (checkbox2.checked) {
+      span1.textContent = '';
+      span3.textContent = '';
+      span4.textContent = '';
+      span5.textContent = '';
+
       span2.textContent =
         'No more than 2GB. All files in your account must fit your allotted storage space.';
     } else {
@@ -38,6 +44,11 @@ window.addEventListener('load', () => {
 
   checkbox3.addEventListener('change', () => {
     if (checkbox3.checked) {
+      span1.textContent = '';
+      span2.textContent = '';
+      span4.textContent = '';
+      span5.textContent = '';
+
       span3.textContent =
         'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.';
     } else {
@@ -47,6 +58,11 @@ window.addEventListener('load', () => {
 
   checkbox4.addEventListener('change', () => {
     if (checkbox4.checked) {
+      span1.textContent = '';
+      span2.textContent = '';
+      span3.textContent = '';
+      span5.textContent = '';
+
       span4.textContent =
         'Yes! Send us a message and we’ll process your request no questions asked.';
     } else {
@@ -56,6 +72,11 @@ window.addEventListener('load', () => {
 
   checkbox5.addEventListener('change', () => {
     if (checkbox5.checked) {
+      span1.textContent = '';
+      span2.textContent = '';
+      span3.textContent = '';
+      span4.textContent = '';
+
       span5.textContent =
         'Chat and email support is available 24/7. Phone lines are open during normal business hours.';
     } else {
