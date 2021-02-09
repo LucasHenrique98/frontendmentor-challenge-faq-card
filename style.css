@@ -41,12 +41,21 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+
+  box-shadow: 2px 2px 30px black;
 }
 .img {
   position: absolute;
   left: 280px;
   top: 390px;
   z-index: 2;
+}
+#checkbox1,
+#checkbox2,
+#checkbox3,
+#checkbox4,
+#checkbox5 {
+  display: none;
 }
 
 .questionCard {

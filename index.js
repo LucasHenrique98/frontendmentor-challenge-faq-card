@@ -1,21 +1,25 @@
 window.addEventListener('load', () => {
   const span1 = document.querySelector('.response1');
-  const checkbox1 = document.querySelector('.checkbox1');
+  const checkbox1 = document.querySelector('#checkbox1');
 
   const span2 = document.querySelector('.response2');
-  const checkbox2 = document.querySelector('.checkbox2');
+  const checkbox2 = document.querySelector('#checkbox2');
 
   const span3 = document.querySelector('.response3');
-  const checkbox3 = document.querySelector('.checkbox3');
+  const checkbox3 = document.querySelector('#checkbox3');
 
   const span4 = document.querySelector('.response4');
-  const checkbox4 = document.querySelector('.checkbox4');
+  const checkbox4 = document.querySelector('#checkbox4');
 
   const span5 = document.querySelector('.response5');
-  const checkbox5 = document.querySelector('.checkbox5');
+  const checkbox5 = document.querySelector('#checkbox5');
 
   checkbox1.addEventListener('change', () => {
     if (checkbox1.checked) {
+      checkbox2.checked = false;
+      checkbox3.checked = false;
+      checkbox4.checked = false;
+      checkbox5.checked = false;
       span1.textContent =
         'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.';
     } else {
